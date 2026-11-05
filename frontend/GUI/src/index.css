@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import "tailwindcss";
+*{
+	font-family: "Silkscreen";
+}
+body{
+	background-color: #090A0D;
+}
+
+.fatherGrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+        "askAi history"
+        "features history";
+
+    gap: 40px;
+}
+
+.askAi{
+	grid-area: askAi;
+}
+.history{
+	grid-area: history;
+}
+.features{
+	grid-area: features;
+}
