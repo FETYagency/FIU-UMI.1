@@ -1,4 +1,4 @@
-# DECTATOR — AI Content Authenticity Detector
+# DETACTOR — AI Content Authenticity Detector
 
 DECTATOR is a full-stack AI-powered platform designed to detect misleading digital content using machine learning.
 
@@ -35,7 +35,7 @@ The goal of DECTATOR is to help users evaluate the authenticity of online inform
 
 ---
 
-# Tech Stack
+# 🎓Tech Stack
 
 ## Frontend
 
@@ -67,10 +67,10 @@ The goal of DECTATOR is to help users evaluate the authenticity of online inform
 
 ---
 
-# Project Structure
+# 🛖Project Structure
 
 ```
-DECTATOR/
+DETACTOR/
 
 ├── frontend/
 │   ├── src/
@@ -93,7 +93,7 @@ DECTATOR/
 
 ---
 
-# Installation
+# 📲Installation
 
 ## Requirements
 
@@ -205,9 +205,15 @@ http://localhost:5173
 
 ---
 
-# EXPERIMENT THE APP
+# 🔥EXPERIMENT THE APP
 
 ## PASTE ARITICLES
+
+INTO ARTICLE FORM INPUT YOU CAN PASTE AN ARTICLE YOU SUSPECT OR WHAT IS PROVIDED IN THE EXAMPLE BELLOW AND LET THE MODEL DO ITS WORK
+
+```
+also experiment it using our testing data also 🤩⚡ ==> https://bit.ly/4iDBke2
+```
 
 EXAMPLE
 
@@ -226,7 +232,7 @@ Industry analysts expect competition to remain strong as established automotive 
 ## DEEPFAKE PREDICTION
 
 ```
-also experiment it using our testing data also 🤩 ==> https://bit.ly/4iDBke2
+also experiment it using our testing data also 🤩⚡ ==> https://bit.ly/4eqx7Jn
 ```
 
 Input:
