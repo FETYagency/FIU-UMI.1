@@ -148,7 +148,7 @@ The deepfake model file is not included in this repository because GitHub has a 
 Download the model:
 
 ```
-"deepfake_xception.h5" ==>FROM THIS DOWNLOAD LINK ==> https://l1nk.dev/1lhl5tj
+"deepfake_xception.h5" DOWNLOAD HERE ==> https://bit.ly/3UEiYSi
 ```
 
 Place it inside:
@@ -226,7 +226,7 @@ Industry analysts expect competition to remain strong as established automotive 
 ## DEEPFAKE PREDICTION
 
 ```
-also experiment using our testing data also ==> https://l1nk.dev/plpg8g3
+also experiment it using our testing data also 🤩 ==> https://bit.ly/4iDBke2
 ```
 
 Input:
