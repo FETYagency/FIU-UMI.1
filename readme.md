@@ -95,7 +95,7 @@ DETACTOR/
 
 # 📲Installation
 
-## Requirements
+## 🧧Requirements
 
 Make sure you have:
 
@@ -105,7 +105,7 @@ Make sure you have:
 
 ---
 
-# Backend Setup
+# 🧧🧧 Backend Setup
 
 Navigate to the backend folder:
 
@@ -141,7 +141,7 @@ pip install -r requirements.txt
 
 ---
 
-# Deepfake Model Setup
+# 🧧🧧Deep fake Model Setup🧧🧧
 
 The deepfake model file is not included in this repository because GitHub has a 100MB file size limit.
 
@@ -161,7 +161,7 @@ The backend will automatically load the model when starting the API.
 
 ---
 
-# Running the Backend
+# 🧧🧧Running the Backend🧧🧧
 
 From the backend directory:
 
@@ -177,7 +177,7 @@ http://127.0.0.1:8000
 
 ---
 
-# Frontend Setup
+# 🧧🧧Frontend Setup
 
 Open another terminal:
 
