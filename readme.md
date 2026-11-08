@@ -206,13 +206,18 @@ http://localhost:5173
 ---
 
 # 🔥EXPERIMENT THE APP
+```
+OUR WHOLE APP DATASET IS HERE => https://bit.ly/4sLY3Jz
+```
 
-## PASTE ARITICLES
+## FAKE NEWS PREDICTIONS
 
-INTO ARTICLE FORM INPUT YOU CAN PASTE AN ARTICLE YOU SUSPECT OR WHAT IS PROVIDED IN THE EXAMPLE BELLOW AND LET THE MODEL DO ITS WORK
+🌟PASTE ARITICLES!
+
+INTO THE ARTICLE FORM INPUT YOU CAN PASTE AN ARTICLE YOU SUSPECT OR WHAT IS PROVIDED IN THE EXAMPLE BELLOW AND LET THE MODEL DO ITS WORK
 
 ```
-also experiment it using our testing data also 🤩⚡ ==> https://bit.ly/4iDBke2
+also experiment it using our testing data also /DATA-FAKE_NEWS 🤩⚡ ==> https://bit.ly/4sLY3Jz
 ```
 
 EXAMPLE
@@ -230,9 +235,10 @@ Industry analysts expect competition to remain strong as established automotive 
 ---
 
 ## DEEPFAKE PREDICTION
+🌟UPLOAD IMAGES!
 
 ```
-also experiment it using our testing data also 🤩⚡ ==> https://bit.ly/4eqx7Jn
+also experiment it using our testing data also /DATA-DEEPFAKE 🤩⚡ ==> https://bit.ly/4sLY3Jz
 ```
 
 Input:
