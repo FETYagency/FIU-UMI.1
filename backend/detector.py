@@ -1,7 +1,5 @@
 # detector.py
-# Loads the trained deepfake model and exposes a predict() function
-# Imported by app.py and scripts
-# Bunch of imported things that I lowkey barely have any idea what they do but they work so I salute
+# Loads the trained deepfake model and exposes a predict() helper.
 
 import os
 import numpy as np
@@ -9,15 +7,14 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import math
 from datetime import datetime, timezone
-# FILE PATH HANDLING 
+# Resolve the model path relative to this file.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 os.chdir(SCRIPT_DIR)
 
-# MODEL CONFIG 
+# Model configuration
 MODEL_PATH = "./model/deepfake/deepfake_xception.h5"
 IMG_SIZE = 224
 
-# LOAD MODEL
 _model = None
 
 def _get_model():
@@ -53,8 +50,7 @@ def predict(img_path, use_tta=True):
     img = image.load_img(img_path, target_size=(IMG_SIZE, IMG_SIZE))
     arr = image.img_to_array(img) / 255.0
 
-    # TTA BLOCK  (using transformed images of dataset to give new angles of deepfaked data) new 10/15
-    # updated to only use horizontal flips 10/17
+    # Test-time augmentation: evaluate the original image and its horizontal flip.
     if use_tta:
         variants = [
             arr,
@@ -68,7 +64,7 @@ def predict(img_path, use_tta=True):
         score = float(model.predict(arr, verbose=0)[0][0])
 
 
-    # class_indices from training: {'deepfake': 0, 'real': 1}
+    # Training labels: {'deepfake': 0, 'real': 1}
     label = "REAL" if score > 0.5 else "DEEPFAKE"
     confidence = score if score > 0.5 else 1 - score
 
@@ -81,7 +77,6 @@ def predict(img_path, use_tta=True):
     }
 
 
-# CLI ENTRY (optional)
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
@@ -90,7 +85,7 @@ if __name__ == "__main__":
 
     use_tta = "--no-tta" not in sys.argv   # new 10/15
     result = predict(sys.argv[1], use_tta=use_tta)
-    print(f"Prediction: {result['label']}")
+    print(f"Prediction: {result['prediction']}")
     print(f"Confidence: {result['confidence'] * 100:.2f}%")
     print(f"Raw score:  {result['raw_score']:.4f}")
     print(f"TTA:        {'enabled' if use_tta else 'disabled'}")   # new 10/15
