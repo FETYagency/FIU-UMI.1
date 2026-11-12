@@ -141,6 +141,31 @@ pip install -r requirements.txt
 
 ---
 
+# 🧧🧧NOTE: TRAINING MODELS🧧🧧
+If you are planning to run the training files and train your own model, make sure to include the dataset folder provided in the link below:
+```
+https://bit.ly/4sLY3Jz
+```
+file structure:
+
+```
+DETACTOR/
+
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+├── backend/
+│   ├── main.py
+│   ├── model/
+│   ├── requirements.txt
+│   └── ...
+├──DATASETS <-- CREATE NEW
+|    ├──DATA-* <- INCLUDE THE FOLDERS YOU FIND IN THE DRIVE
+└── README.md
+```
+
+
 # 🧧🧧Deep fake Model Setup🧧🧧
 
 The deepfake model file is not included in this repository because GitHub has a 100MB file size limit.

@@ -17,7 +17,7 @@ const styleObject = {
 
 export function RecentCheck({type, title, confidence, time}){
     let level
-    if (confidence>80) {
+    if (confidence>=80) {
         level = "high"
     }else if(confidence>40 && confidence<80){
         level = "moderate"

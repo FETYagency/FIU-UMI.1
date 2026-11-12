@@ -23,9 +23,9 @@ STAGE1_EPOCHS = 3
 STAGE2_EPOCHS = 7      
 LR_STAGE1 = 1e-4
 LR_STAGE2 = 1e-5       
-TRAIN_DIR = "data/train"
-VAL_DIR = "data/test"
-MODEL_SAVE_PATH = "models/deepfake_xception.h5"
+TRAIN_DIR = "data/train" # Directory containing training images ("CHANGE THEM BASED ON YOUR DATASET")
+VAL_DIR = "data/test" # Directory containing validation images
+MODEL_SAVE_PATH = "../backend/model/deepfake/deepfake_xception.h5"
 
 print("TensorFlow version:", tf.__version__)
 print("GPU available:", tf.config.list_physical_devices('GPU'))
