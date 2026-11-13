@@ -9,6 +9,7 @@ import { faFontAwesome } from "@fortawesome/free-solid-svg-icons"
 
 import { useEffect } from "react"
 import { useStore } from "../store"
+const API_URL = import.meta.env.VITE_API_URL
 
 export function History(){
         const articlesScannedToday = useStore(state => state.fakeNewsStats.stats.TOTAL_ARTICLES_SCANNED)
@@ -22,8 +23,9 @@ export function History(){
         const setScore = useStore(state => state.getScore)
         useEffect(()=>{
             async function fetchStat(){
+                    console.log(API_URL)
                     const response = await fetch(
-                        "http://127.0.0.1:8000"
+                        `${API_URL}`
                     )
                     if(response.ok){
                         const data = await response.json()
