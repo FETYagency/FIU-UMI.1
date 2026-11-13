@@ -1,7 +1,7 @@
 const API_URL = import.meta.env.VITE_API_URL    
 export async function predictNews(model, body){
         let url = API_URL
-        url=model=="FN"?url.concat("fakeNews"):url.concat("deepFake")
+        url=model=="FN"?url.concat("/fakeNews"):url.concat("/deepFake")
         const predictDeepfake = async (body) => {
             const formData = new FormData();
 

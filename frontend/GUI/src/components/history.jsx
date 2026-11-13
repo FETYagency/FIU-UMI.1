@@ -24,19 +24,26 @@ export function History(){
         useEffect(()=>{
             async function fetchStat(){
                     console.log(API_URL)
-                    const response = await fetch(
-                        `${API_URL}`
-                    )
-                    if(response.ok){
-                        const data = await response.json()
-                        setArticlesScanned(data.TOTAL_ARTICLES_SCANNED)
-                        setFakeNewsDetected(data.FAKE_NEWS_DETECTED)
-                        setScore(data.SCORE)
-                        getIsOnline(true)
+                    
+                    try {
+                        const response = await fetch(
+                            API_URL
+                        )
+                        
+                        if(response.ok){
+                            const data = await response.json()
+                            setArticlesScanned(data.TOTAL_ARTICLES_SCANNED)
+                            setFakeNewsDetected(data.FAKE_NEWS_DETECTED)
+                            setScore(data.SCORE)
+                            getIsOnline(true)
+                        }
+                    } catch (error) {
+                        console.log(error)
                     }
             }
+            fetchStat()
             setTimeout(async () =>{
-                await fetchStat()
+                // await fetchStat()
             },1500)
 
         },[])
