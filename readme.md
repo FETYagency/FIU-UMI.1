@@ -144,12 +144,18 @@ pip install -r requirements.txt
 # 🧧🧧NOTE: TRAINING MODELS🧧🧧
 If you are planning to run the training files and train your own model, make sure to include the dataset folder provided in the link below:
 ```
-https://bit.ly/4sLY3Jz
+【Deepfake】 training data : https://drive.google.com/drive/folders/149j40V7LJ0rkXlREcdrpUp3MUz0Y1CkV
+
+【Deepfake】 validation data : https://drive.google.com/drive/folders/1Lxm2BbmTHXOGz0YblW5qVOgcq6h6axIO?usp=drive_link
+
+---0---
+
+【FAKE NEWS】 training data : https://drive.google.com/drive/folders/17MnJoJ_4Z3m9TkhpeGWiMvkGMBQukNf1?usp=drive_link
 ```
 file structure:
 
 ```
-DETACTOR/
+FU-UMI.1/
 
 ├── frontend/
 │   ├── src/
@@ -161,8 +167,19 @@ DETACTOR/
 │   ├── requirements.txt
 │   └── ...
 ├──DATASETS <-- CREATE NEW
-|    ├──DATA-* <- INCLUDE THE FOLDERS YOU FIND IN THE DRIVE
+|    ├──DATA-* <- CREATE & INCLUDE THE FOLDERS YOU FIND IN THE DRIVE
 └── README.md
+```
+training path setup in `./training/train.py` for the deepfake model
+```python
+  TRAIN_DIR = "../DATASETS/DATA-DEEPFAKE_TRAINING" # Directory containing training images ("CHANGE THEM BASED ON YOUR DATASET")
+  VAL_DIR = "../DATASETS/DATA-DEEPFAKE" # Directory containing validation images
+  MODEL_SAVE_PATH = "../backend/model/deepfake/deepfake_xception.h5"
+```
+training path setup in `./training/app.ipynb` for the deepfake model
+```python
+  fake = pd.read_csv("../DATASETS/DATA-FAKE_NEWS/Fake.csv")
+  true = pd.read_csv("../DATASETS/DATA-FAKE_NEWS/True.csv")
 ```
 
 
@@ -173,7 +190,7 @@ The deepfake model file is not included in this repository because GitHub has a 
 Download the model:
 
 ```
-"deepfake_xception.h5" DOWNLOAD HERE ==> https://bit.ly/3UEiYSi
+"deepfake_xception.h5" DOWNLOAD HERE ==> https://drive.google.com/file/d/16_vVNpzqr-qcf1vWzgakyN8AZeRKd-b-/view?usp=drive_link
 ```
 
 Place it inside:
@@ -230,11 +247,7 @@ http://localhost:5173
 
 ---
 
-# 🔥EXPERIMENT THE APP
-```
-OUR WHOLE APP DATASET IS HERE => https://bit.ly/4sLY3Jz
-```
-
+ 
 ## FAKE NEWS PREDICTIONS
 
 🌟PASTE ARITICLES!
@@ -242,7 +255,7 @@ OUR WHOLE APP DATASET IS HERE => https://bit.ly/4sLY3Jz
 INTO THE ARTICLE FORM INPUT YOU CAN PASTE AN ARTICLE YOU SUSPECT OR WHAT IS PROVIDED IN THE EXAMPLE BELLOW AND LET THE MODEL DO ITS WORK
 
 ```
-also experiment it using our testing data also /DATA-FAKE_NEWS 🤩⚡ ==> https://bit.ly/4sLY3Jz
+also TEST it using our testing data also🤩⚡ ==> https://drive.google.com/file/d/1ZtvFFqXPrRdN942wA7mLP01QNRKancMU/view?usp=drive_link
 ```
 
 EXAMPLE
@@ -263,7 +276,7 @@ Industry analysts expect competition to remain strong as established automotive 
 🌟UPLOAD IMAGES!
 
 ```
-also experiment it using our testing data also /DATA-DEEPFAKE 🤩⚡ ==> https://bit.ly/4sLY3Jz
+also TEST it using our testing data also 🤩⚡ ==> https://drive.google.com/drive/folders/1Lxm2BbmTHXOGz0YblW5qVOgcq6h6axIO?usp=drive_link
 ```
 
 Input:
