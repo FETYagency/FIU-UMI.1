@@ -33,7 +33,6 @@ vectorizer = joblib.load(BASE_DIR / "model" / "vectorizer.jb")
 
 @app.get("/")
 def home():
-        print("request received sir")
         return {
             "TOTAL_ARTICLES_SCANNED":TOTAL_ARTICLES_SCANNED,
             "FAKE_NEWS_DETECTED":FAKE_NEWS_DETECTED,
