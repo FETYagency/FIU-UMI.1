@@ -70,7 +70,7 @@ The goal of DECTATOR is to help users evaluate the authenticity of online inform
 # 🛖Project Structure
 
 ```
-DETACTOR/
+FU-UMI.1/
 
 ├── frontend/
 │   ├── src/
@@ -298,9 +298,9 @@ Returns:
 
 # Author
 
-**FETY&#x20;**
+**巴德 1820252112&#x20;**
 
-Computer Science Students | AI & Full-Stack Development
+Computer Science Student | AI & Full-Stack Development
 
 ---
 
