@@ -87,7 +87,9 @@ FU-UMI.1/
 │   ├── requirements.txt
 |   ├── detector.py
 │   └── ...
-
+├── training/
+|   ├──app.ipynb (fake news training file)
+|   ├──train.py (deepfake training file)
 └── README.md
 ```
 
