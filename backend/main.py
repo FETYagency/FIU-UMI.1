@@ -8,7 +8,7 @@ import time
 from stats.fakenews import *
 import math
 from datetime import datetime, timezone
-# from detector import predict
+from detector import predict
 from pathlib import Path
 # import list finishes
 BASE_DIR = Path(__file__).resolve().parent
@@ -17,9 +17,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
      allow_origins=[
-        # "http://127.0.0.1:5173",
-        # "http://localhost:5173",
-        "https://fiu-umi-1.vercel.app",
+        "http://127.0.0.1:5173",
+        "http://localhost:5173",
     ],
     allow_credentials=True,
     allow_methods=["*"],
