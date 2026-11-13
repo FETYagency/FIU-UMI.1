@@ -211,7 +211,7 @@ From the backend directory:
 uvicorn main:app --reload
 ```
 
-The API will start at:
+The API will start approxiametly after ~ 14 seconds ~ at:
 
 ```
 http://127.0.0.1:8000
