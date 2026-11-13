@@ -9,8 +9,9 @@ from stats.fakenews import *
 import math
 from datetime import datetime, timezone
 from detector import predict
+from pathlib import Path
 # import list finishes
-
+BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI()
 app.add_middleware(
@@ -25,8 +26,8 @@ app.add_middleware(
 )
 
 # Loading models for the fake news
-model = joblib.load("./model/lr_model.jb")
-vectorizer = joblib.load("./model/vectorizer.jb")
+model = joblib.load(BASE_DIR / "model" / "lr_model.jb")
+vectorizer = joblib.load(BASE_DIR / "model" / "vectorizer.jb")
 
 # ########################################################################
 
