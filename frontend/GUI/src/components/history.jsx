@@ -41,9 +41,8 @@ export function History(){
                         console.log(error)
                     }
             }
-            fetchStat()
             setTimeout(async () =>{
-                // await fetchStat()
+                await fetchStat()
             },1500)
 
         },[])
