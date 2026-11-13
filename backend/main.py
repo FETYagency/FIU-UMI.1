@@ -8,7 +8,7 @@ import time
 from stats.fakenews import *
 import math
 from datetime import datetime, timezone
-from detector import predict
+# from detector import predict
 from pathlib import Path
 # import list finishes
 BASE_DIR = Path(__file__).resolve().parent
